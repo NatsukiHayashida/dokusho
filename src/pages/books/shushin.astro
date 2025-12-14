@@ -1,0 +1,1063 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="修身教授録">
+  <article>
+    <!-- ヘッダー -->
+    <header class="mb-8">
+      <a href="/" class="text-sm text-gray-500 hover:text-gray-700 mb-4 inline-block">
+        ← 一覧に戻る
+      </a>
+
+      <!-- 書籍情報 -->
+      <div class="flex gap-6 mt-4 max-w-lg">
+        <img
+          src="/images/books/shushin.webp"
+          alt="修身教授録"
+          class="w-24 sm:w-32 rounded-lg shadow-md flex-shrink-0"
+        />
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">修身教授録</h1>
+          <p class="text-gray-500 mt-1 text-sm">現代に甦る人間学の要諦</p>
+          <dl class="mt-3 text-sm space-y-1">
+            <div class="flex gap-2">
+              <dt class="text-gray-500 w-14">著者</dt>
+              <dd class="text-gray-900">森信三</dd>
+            </div>
+            <div class="flex gap-2">
+              <dt class="text-gray-500 w-14">出版社</dt>
+              <dd class="text-gray-900">致知出版社</dd>
+            </div>
+            <div class="flex gap-2">
+              <dt class="text-gray-500 w-14">初版</dt>
+              <dd class="text-gray-900">1989年</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </header>
+
+    <!-- 結論: 一言で言うと -->
+    <section class="bg-gray-900 text-white rounded-lg p-5 sm:p-6 mb-10">
+      <p class="text-sm text-gray-400 mb-1">この本を一言で言うと</p>
+      <p class="text-xl sm:text-2xl font-bold">「人間はいかに生きるべきか」を説いた、現代の論語</p>
+      <p class="text-gray-300 mt-3 text-sm sm:text-base">
+        戦前の師範学校で、哲学者・森信三が16〜17歳の教師志望の学生たちに語った講義録。
+        単なる道徳論ではなく、人生哲学と具体的な実践論が凝縮されている。
+      </p>
+    </section>
+
+    <!-- 目次 -->
+    <nav class="bg-gray-50 rounded-lg p-5 mb-10">
+      <p class="text-sm font-semibold text-gray-700 mb-3">目次</p>
+      <ol class="text-sm space-y-1 text-gray-600 columns-1 sm:columns-2 gap-8">
+        <li><a href="#overview" class="hover:text-gray-900">1. 本書の概要</a></li>
+        <li><a href="#author" class="hover:text-gray-900">2. 著者・森信三とは</a></li>
+        <li><a href="#structure" class="hover:text-gray-900">3. 本書の構成（全79講）</a></li>
+        <li><a href="#core" class="hover:text-gray-900">4. 核となる7つの教え</a></li>
+        <li><a href="#quotes" class="hover:text-gray-900">5. 印象に残った言葉</a></li>
+        <li><a href="#part1" class="hover:text-gray-900">6. 第1部 各講の詳細</a></li>
+        <li><a href="#part2" class="hover:text-gray-900">7. 第2部 各講の詳細</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. 本書の概要 -->
+    <section id="overview" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">1. 本書の概要</h2>
+
+      <div class="prose prose-gray max-w-none mb-6">
+        <p>
+          『修身教授録』は、大阪天王寺師範学校（現・大阪教育大学）で森信三が行った「修身」科の講義録。
+          <strong>昭和12年〜14年（1937〜1939年）</strong>にかけて、当時40代だった森先生が
+          小学校教員志望の16〜17歳の生徒たちに語りかけた内容がまとめられている。
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-4 mb-6">
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+          <p class="text-3xl font-bold text-gray-900">79</p>
+          <p class="text-sm text-gray-600">講義数</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+          <p class="text-3xl font-bold text-gray-900">16万部</p>
+          <p class="text-sm text-gray-600">累計発行部数</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center">
+          <p class="text-3xl font-bold text-gray-900">1989年</p>
+          <p class="text-sm text-gray-600">初版刊行</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+        <p class="text-sm text-blue-900">
+          <strong>「修身」とは：</strong>
+          福澤諭吉の定義によれば「身の行いを修め、人に交わり、この世を渡るべき天然の道理を述べたるもの」。
+          戦後の占領政策で一度廃止されたが、本書はその人間教育の原点を現代に甦らせた。
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. 著者について -->
+    <section id="author" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">2. 著者・森信三とは</h2>
+
+      <p class="text-gray-700 mb-6">
+        <strong>森信三（1896〜1992）</strong> ― 愛知県出身の哲学者・教育者。
+        京都帝国大学で西田幾多郎に師事し、「全一学」と呼ぶ独自の哲学体系を構想。
+        哲学を抽象理論に留めず生活と行動に結びつける実践哲学を展開した。
+        松下幸之助、稲盛和夫など昭和・平成の経営者にも思想的影響を与えた。
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <h3 class="font-semibold text-gray-900 mb-3">核心の信念</h3>
+          <p class="text-xl font-bold text-gray-900 mb-2">「人生二度なし」</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            人生は一度きり。だから持てる力を余すところなく発揮し、懸命に生きるべき。
+            幼少期の苦難と青春期の死の危機から、この覚悟が刻まれた。
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <h3 class="font-semibold text-gray-900 mb-3">教育哲学</h3>
+          <p class="text-xl font-bold text-gray-900 mb-2">「知行合一」</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            あえて研究者ではなく教育現場へ。理論と実践の一致を生涯貫いた。
+            90歳を超えても手紙で若者を指導し、思想と行動が最後まで一致した人生。
+          </p>
+        </div>
+      </div>
+
+      <!-- 経歴 -->
+      <h3 class="font-semibold text-gray-900 mb-3">なぜこの人の言葉に重みがあるか</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-gray-50 rounded-lg p-4">
+          <p class="text-xs text-gray-500 mb-1">幼少期</p>
+          <p class="text-sm text-gray-900 font-medium">母と離別、養子に出される</p>
+          <p class="text-xs text-gray-600 mt-1">→ 逆境を乗り越える精神の土台</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4">
+          <p class="text-xs text-gray-500 mb-1">青春期</p>
+          <p class="text-sm text-gray-900 font-medium">度重なる死の危機を経験</p>
+          <p class="text-xs text-gray-600 mt-1">→ 「人生二度なし」の覚悟</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4">
+          <p class="text-xs text-gray-500 mb-1">大学時代</p>
+          <p class="text-sm text-gray-900 font-medium">西田幾多郎・和辻哲郎に師事</p>
+          <p class="text-xs text-gray-600 mt-1">→ 東西哲学を統合した「全一学」</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4">
+          <p class="text-xs text-gray-500 mb-1">キャリア選択</p>
+          <p class="text-sm text-gray-900 font-medium">研究者ではなく教育現場へ</p>
+          <p class="text-xs text-gray-600 mt-1">→ 「知行合一」理論と実践の一致</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 本書の構成 -->
+    <section id="structure" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">3. 本書の構成（全79講）</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">第1部（1937年度講義）</h3>
+          <p class="text-sm text-gray-600 mb-3">全40講 - 人生観・教育観の基本原理</p>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>• 人生の有限性と意義</li>
+            <li>• 教師の使命</li>
+            <li>• 読書・修養の重要性</li>
+            <li>• 仕事の処理法</li>
+            <li>• 対人関係の心得</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <h3 class="font-semibold text-gray-900 mb-2">第2部（1938年度講義）</h3>
+          <p class="text-sm text-gray-600 mb-3">全39講 - より踏み込んだ実践論</p>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>• 立志と大志</li>
+            <li>• 気品と慎独</li>
+            <li>• 情熱の維持</li>
+            <li>• 長期的視野と粘り強さ</li>
+            <li>• 各種徳目の詳細</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 核となる7つの教え -->
+    <section id="core" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">4. 核となる7つの教え</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- ① 人生二度なし -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">1</span>
+            <h3 class="text-lg font-bold text-gray-900">人生二度なし</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「人生は一度きりで、過去に戻ってやり直すことはできない」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 古来、例外は一度もない</li>
+            <li>• <strong>「一日が一生の縮図」</strong></li>
+            <li>• 今日一日をおろそかにする者は、生涯をおろそかにする</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> 忙しさに流されず、一日一日を意識的に生きる
+          </p>
+        </div>
+
+        <!-- ② 最善観 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">2</span>
+            <h3 class="text-lg font-bold text-gray-900">最善観</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「自分に降りかかる一切の出来事は、必然であり、最善である」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 制御できないことに感情を抱かない</li>
+            <li>• 天命として粛々と受け入れ、感謝する</li>
+            <li>• 苦難は「最善の試練」と捉え成長の糧に</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> 外部の出来事に心を乱さず、受け容れる強さを養う
+          </p>
+        </div>
+
+        <!-- ③ 凡事徹底 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">3</span>
+            <h3 class="text-lg font-bold text-gray-900">凡事徹底</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「どんな小さな仕事や日常の作法でも、決して手を抜かず全力で取り組む」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 日常の細かい部分に人間性が問われる</li>
+            <li>• 机の整理整頓、即時処理が自己鍛錬に</li>
+            <li>• 雑務処理が人間形成につながる</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> プロフェッショナリズムの根幹。小さな仕事が信頼を築く
+          </p>
+        </div>
+
+        <!-- ④ 立腰 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">4</span>
+            <h3 class="text-lg font-bold text-gray-900">立腰（りつよう）</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「心を立てるには、まず身体を立てよ」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 腰骨を立てて背筋を伸ばす</li>
+            <li>• 「心身一如」の人間形成法</li>
+            <li>• 姿勢→集中力・持続力・自律心</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> マインドフルネスにも通じる。姿勢と心は連動する
+          </p>
+        </div>
+
+        <!-- ⑤ 慎独 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">5</span>
+            <h3 class="text-lg font-bold text-gray-900">慎独（しんどく）</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「人がただひとりの場合でも、深く己を慎むこと」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 誰も見ていない場所で自分を律する</li>
+            <li>• これが人間の気品を身につける根本</li>
+            <li>• 「天を相手にする」境地</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> コンプライアンスの源泉。他者の目がなくても倫理観を維持
+          </p>
+        </div>
+
+        <!-- ⑥ 下坐行 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">6</span>
+            <h3 class="text-lg font-bold text-gray-900">下坐行（げざぎょう）</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「常に謙虚な姿勢で他者に接し、自らを省みる」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 自分の席を一段低くする謙譲の精神</li>
+            <li>• 未熟だと目上に卑屈、目下に傲慢に</li>
+            <li>• 修養を積む人は自然と謙虚になる</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> 多様な他者への敬意と謙虚さ。人間関係の基本
+          </p>
+        </div>
+
+        <!-- ⑦ 読書 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">7</span>
+            <h3 class="text-lg font-bold text-gray-900">読書</h3>
+          </div>
+          <blockquote class="border-l-4 border-gray-300 pl-3 text-gray-700 italic text-sm mb-3">
+            「一日読まざれば一日衰える」
+          </blockquote>
+          <ul class="text-sm text-gray-700 space-y-1 mb-3">
+            <li>• 読書は「心の栄養」である</li>
+            <li>• <strong>「一人の人間の世界の広さ深さは、その人の読書の広さ深さに比例する」</strong></li>
+            <li>• 身体の食事と同様、心にも日々の糧が必要</li>
+          </ul>
+          <p class="text-xs bg-blue-50 text-blue-800 p-2 rounded">
+            <strong>現代への示唆:</strong> 情報過多の時代だからこそ、良書を選び腰を据えて向き合う習慣が重要
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 印象に残った言葉 -->
+    <section id="quotes" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">5. 印象に残った言葉</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- 複数行：左寄せ -->
+        <blockquote class="bg-gray-900 text-white p-5 rounded-lg h-32 flex items-center">
+          <p class="text-xs leading-relaxed">「人間が真に命懸けでやる気になったら、生涯かけて一体どれくらいのことができるものか、一つ生涯を賭けて試してみよ」</p>
+        </blockquote>
+        <!-- 1行：中央配置 -->
+        <blockquote class="bg-gray-900 text-white p-5 rounded-lg h-32 flex items-center justify-center">
+          <p class="text-lg leading-relaxed text-center font-medium">「教えることは即ち学ぶことである」</p>
+        </blockquote>
+        <!-- 1行：中央配置 -->
+        <blockquote class="bg-gray-900 text-white p-5 rounded-lg h-32 flex items-center justify-center">
+          <p class="text-lg leading-relaxed text-center font-medium">「逢うべき人には必ず逢える」</p>
+        </blockquote>
+        <!-- 1行：中央配置 -->
+        <blockquote class="bg-gray-900 text-white p-5 rounded-lg h-32 flex items-center justify-center">
+          <p class="text-xl leading-relaxed text-center font-medium">「一日が一生の縮図です」</p>
+        </blockquote>
+        <!-- 複数行：左寄せ -->
+        <blockquote class="bg-gray-900 text-white p-5 rounded-lg h-32 flex items-center">
+          <p class="text-sm leading-relaxed">「一人の人間の世界の広さ深さは、その人の読書の広さ深さに比例する」</p>
+        </blockquote>
+        <!-- 複数行：左寄せ -->
+        <blockquote class="bg-gray-900 text-white p-5 rounded-lg h-32 flex items-center">
+          <p class="text-sm leading-relaxed">「自分のなすべき仕事を少しの隙間も置かず着々と次々に処理していくこと」</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 6. 第1部 各講の詳細 -->
+    <section id="part1" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">6. 第1部 各講の詳細（1937年度）</h2>
+      <p class="text-gray-600 mb-6">人生観や教育観の基本原理から説き起こした初年度の講義。</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <!-- 第1講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第1講「学年始めの挨拶」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「いかなる場合でも身に降りかかる事柄は全て天命として謹んで受けよ。これこそ最善の人生態度である」
+            </blockquote>
+            <p>修身の根本目的を語る。どんな境遇でも不平不満を言わず、天の与えた試練と感謝して受け容れることが人間の修養の基本姿勢。</p>
+            <p class="mt-2"><strong>要点:</strong> 「人生の根本目標は、人として生を受けた真の意義を自覚し実現することに尽きる」</p>
+          </div>
+        </details>
+
+        <!-- 第2講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第2講「人間と生まれて」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「人身受け難し」（仏教の言葉）
+            </blockquote>
+            <p>人は本来資格があって生まれてきたわけではない。与えられた命で生を受けたのだから、人間としてこの世に生を享けた真の意義を自覚し、天分を発揮して生きよ。</p>
+          </div>
+        </details>
+
+        <!-- 第3講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第3講「生をこの国土に受けて」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>日本に生まれたのは計り知れない因縁の重なり合った結果。優れた国だから偉いのではなく、その縁に自覚することで感謝の念が生まれる。祖国への感謝と責任を持て。</p>
+          </div>
+        </details>
+
+        <!-- 第4講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第4講「生を教育に求めて」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>「教育は国家的な大業」。教師は極めて意義深い仕事だからこそ、常に自己を高めて卓越した人物になることが求められる。崇高な使命感を持って取り組め。</p>
+          </div>
+        </details>
+
+        <!-- 第5講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第5講「教育者の道」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「教えることは即ち学ぶことである」
+            </blockquote>
+            <p>教師は教壇に立った瞬間に学ぶ者でもある。生涯を通じて学び続ける姿勢が確立して初めて、真実の教育者としての第一歩が始まる。自ら学ばぬ者に子どもを教える資格はない。</p>
+          </div>
+        </details>
+
+        <!-- 第6講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第6講「人生の始終」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>孔子の「四十にして惑わず」を引用。「人間、四十になるまでは修行時代である」。40歳までは自己を磨き準備する期間。若いうちに十分修行しておかねば、中年以降に一人前の仕事はできない。</p>
+          </div>
+        </details>
+
+        <!-- 第7講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第7講「志学」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「わが身を修めることを中心にしつつ、ついには天下国家をも修めるに至る」
+            </blockquote>
+            <p>「十五にして学に志す」（論語）に由来。人間はまず自己修養によって人格を磨き、それがやがて家庭・社会・国家をも良く治めることにつながる。「修身斉家治国平天下」の思想。</p>
+          </div>
+        </details>
+
+        <!-- 第8講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第8講「学問・修養の目標」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「我々が学問修養をするのは、人となる道、すなわち人間になる道を明らかにするためである」
+            </blockquote>
+            <p>万人それぞれ唯一無二の独自の使命がある。勉強も人格を磨くのも、自分がこの世に生まれた意味を見出し立派な人間になるため。</p>
+          </div>
+        </details>
+
+        <!-- 第9講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第9講「読書」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「我々の人間生活の半ばは読書に費やし、他の半分はそこで知り得たことを実践して現実に実現することである」
+            </blockquote>
+            <p>読んだことを日常で実践することまで含めて読書の価値がある。「一日読まざれば一日衰える」。読むべきは思想的に優れた本、古典、偉人の伝記。</p>
+          </div>
+        </details>
+
+        <!-- 第10講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第10講「尚友」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>「尚友」とは良き友人を持つこと。「師から学ぶのとは異なる面を友から教わる」。志を同じくする友人同士で切磋琢磨することの意義。現代で言う学び合いのコミュニティの重要性。</p>
+          </div>
+        </details>
+
+        <!-- 第11講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第11講「人と禽獣の異なるゆえん」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>人間は自己がこの世に生まれ出た真の意義を知り、使命を自覚してそれを実現しようとする。動物には目的意識や使命感はない。人間とは志と使命に生きる存在。</p>
+          </div>
+        </details>
+
+        <!-- 第12講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第12講「捨欲即大欲」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>「欲を捨てるは即ち大欲を立つ」。小さな私利私欲を徹底して捨ててこそ、大いなる公益や理想という大欲を抱ける。自分一人の満足を求める欲を断ち切り、世のため人のためという大志を抱け。</p>
+          </div>
+        </details>
+
+        <!-- 第13講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第13講「使命の道」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「生涯を通じて実現される価値は、自己の使命の意義をどれほど深く自覚して生きるかに比例する」
+            </blockquote>
+            <p>人生の価値は自分の使命に気付きそれを全うすることにかかっている。「真の立志を遂げよ」というメッセージ。</p>
+          </div>
+        </details>
+
+        <!-- 第14講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第14講「真実の生活」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「人生は昇る（出世競争する）のではなく、一つの道を掘り続けて切り拓くものだ」
+            </blockquote>
+            <p>安易に名誉や地位を追い求めるのではなく、自分が信じる一つの道を地道に極めよ。</p>
+          </div>
+        </details>
+
+        <!-- 第15講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第15講「諸君らの将来」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「一人の人間の世界の広さ深さは、その人の読書の広さ深さに比例する」
+            </blockquote>
+            <p>若いうちにできるだけ多くの良書を読み視野を広げよ。「小学校教師をしながらどこまで偉くなれるか、自分を実験台にしてやり抜いてみよ」。</p>
+          </div>
+        </details>
+
+        <!-- 第16-17講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第16〜17講「一道をひらく者」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「自分の職責を全うするだけでなく、同じ職業の多くの人々の励ましとなってこそ真に社会に尽くす者と言える」
+            </blockquote>
+            <p>教師として自分一人の教室だけでなく、教育界全体に良い影響を与える存在になれ。</p>
+          </div>
+        </details>
+
+        <!-- 第18講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第18講「人を植える道」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>「一人の偉大な教師が存在することでその精神が地方の人々の心に脈々と根づき、その地域の改革の原動力となること」が真の教育の理想。</p>
+          </div>
+        </details>
+
+        <!-- 第19講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第19講「松陰先生の片鱗」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>吉田松陰の人となりを紹介。「決して相手を見下さず、自らも生徒と共に歩む求道者に過ぎないとの自覚を持っていた」点に松陰の偉大さを見出す。</p>
+          </div>
+        </details>
+
+        <!-- 第20講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第20講「雑話」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「教育者は命懸けで人生を突っ走る覚悟を持ってこそ、子どもの心に一生の志の種まきができる」
+            </blockquote>
+            <p>教師自身が本気で人生を生きることの大切さ。</p>
+          </div>
+        </details>
+
+        <!-- 第21講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第21講「血・育ち・教え」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>人間形成における遺伝（血）・環境（育ち）・指導（教え）の三要素。教え（道徳）の光に照らされることで自分の血筋や育ちの欠点に気づいたら、すぐさま手を打って改善せよ。</p>
+          </div>
+        </details>
+
+        <!-- 第22-23講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第22〜23講「鍛錬道」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「ある種の厳しい鍛錬（師から受ける試練）を経験しない限り真の人間にはなれない」
+            </blockquote>
+            <p>若いうちの苦労と修行の重要性。</p>
+          </div>
+        </details>
+
+        <!-- 第25講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第25講「質問」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「人間が真に命懸けでやる気になったら、生涯かけて一体どれくらいのことができるものか、一つ生涯を賭けて試してみよ」
+            </blockquote>
+            <p>自らの人生を実験台に全力で挑戦する気概を持て。</p>
+          </div>
+        </details>
+
+        <!-- 第26講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第26講「仕事の処理」★注目
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「自分のなすべき仕事を少しの隙間も置かず着々と次々に処理していくことが充実した生活につながる」
+            </blockquote>
+            <p class="font-medium">本書の白眉の一つ。</p>
+            <ul class="mt-2 space-y-1">
+              <li>• 絶対に仕事を溜めないこと</li>
+              <li>• 目の前の仕事から逃げず先延ばしにしない</li>
+              <li>• 「寡兵でもって大敵に向かうようなもの、一心を集中して中央突破せよ」</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 第27講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第27講「成形の功徳」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「物に形を与え、取りまとめておくことが肝要だ」
+            </blockquote>
+            <p>何事も中途半端にせず最後まで形にすることの徳。アウトプットの重要性。</p>
+          </div>
+        </details>
+
+        <!-- 第29講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第29講「対話について」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <ul class="space-y-1">
+              <li>• 「対話ではなるべく聞き役に回れ」</li>
+              <li>• 集団では一人ひとりに発言機会を持たせるよう配慮</li>
+              <li>• 少人数の座談では断定的な物言いを避けよ</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 第30講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第30講「謙遜と卑屈」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「謙遜とは慎んで己を正しく保つ精神で、いかなる相手にも自分を見失わないことだ」
+            </blockquote>
+            <p>真の謙虚さは相手に媚びへつらうのではなく、自分の軸を保ちつつ礼を尽くす態度。「謙遜は常に道（真理）と取り組み、心理（神仏や天）を相手に生きているところから自然と身に付く」</p>
+          </div>
+        </details>
+
+        <!-- 第31講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第31講「上位者に対する心得」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「相手の地位にふさわしいだけの敬意を払え」
+            </blockquote>
+          </div>
+        </details>
+
+        <!-- 第32講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第32講「目下の人に対する心得」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「言葉遣いをぞんざいにするな。決して軽んじるな」
+            </blockquote>
+            <p>地位や力関係によって態度を変えるな。</p>
+          </div>
+        </details>
+
+        <!-- 第33講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第33講「ペスタロッチー断片」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第34講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第34講「国民教育の眼目」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第35講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第35講「為政への関心」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第36講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第36講「誠」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第37講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第37講「死生の問題」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第38講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第38講「小学教師の理想」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第39講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第39講「教育の窮極」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第40講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第40講「わかれの言葉」（第1部最終講）</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 第2部 各講の詳細 -->
+    <section id="part2" class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-6">7. 第2部 各講の詳細（1938年度）</h2>
+      <p class="text-gray-600 mb-6">より踏み込んだ実践論や具体的な徳目の指導が中心の2年目講義。</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <!-- 第1講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第1講「挨拶」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>新年度初回の挨拶。「人生二度なし」と立腰の大切さを再確認。</p>
+          </div>
+        </details>
+
+        <!-- 第2講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第2講「立志」★注目
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「立志とは、この二度とない人生をいかに生きるかという生涯の根本方向を洞察し、それを実現する上で生ずる一切の困難に打ち勝つ大決心を打ち立てることだ」
+            </blockquote>
+            <p>真に志を立てるには人生を見通す大きな見識と覚悟が必要で、決して容易ではない。しかし志なくして偉業なし。</p>
+          </div>
+        </details>
+
+        <!-- 第3講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第3講「人生二度なし」★注目
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「一日が一生の縮図です」
+            </blockquote>
+            <ul class="space-y-1">
+              <li>• 今日一日をおろそかにする者は生涯をおろそかにするのと同じ</li>
+              <li>• 「人間の価値は、その人がこの二度とない人生の意義をいかに深く自覚するかに比例する」</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 第4講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第4講「生命の愛惜」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>自らの命を大切にすることについて。天から与えられた命を粗末にするな。</p>
+          </div>
+        </details>
+
+        <!-- 第5講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第5講「一つの目標」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>人生において一つの目標に集中することの意義。「二兎を追う者は一兎をも得ず」。あれこれ迷わず一つの道を極めよ。</p>
+          </div>
+        </details>
+
+        <!-- 第6講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第6講「意地と凝り性」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>意地（負けじ魂）と凝り性（物事に熱中する性質）は時に人を大成させる原動力になる。ただし徳と結びついた意地であるべき。</p>
+          </div>
+        </details>
+
+        <!-- 第7講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第7講「大志を抱け」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「小さくまとまるな、せっかく教師になるのなら日本の教育を背負うくらいの大志を抱け」
+            </blockquote>
+            <p>平凡に安住せず、常に高い理想と夢を描き努力することが人間を成長させる。</p>
+          </div>
+        </details>
+
+        <!-- 第8講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第8講「気品」★注目
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「気品は人間の値打ちのすべてを言い表す、全人格の結晶であり人から発する内面的な香りである」
+            </blockquote>
+            <ul class="space-y-1">
+              <li>• 気品は一朝一夕には身につかない</li>
+              <li>• 各人が修養によって心を清め続けることでしか得られない</li>
+              <li>• もっとも大切なのが「慎独」</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 第9講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第9講「情熱」
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <p>情熱を維持するには良書を読み偉人に学ぶこと、優れた芸術に触れることが必要。情熱こそ人を動かすエネルギー源。</p>
+          </div>
+        </details>
+
+        <!-- 第10講 -->
+        <details class="bg-white border border-gray-200 rounded-lg">
+          <summary class="p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
+            第10講「三十年」★注目
+          </summary>
+          <div class="px-4 pb-4 text-sm text-gray-700">
+            <blockquote class="border-l-4 border-gray-300 pl-3 italic my-3">
+              「人間が一つの仕事を始めてから仕上げるまで、大体3度くらい危険な時がある。3割で飽きが来て、6割で息切れし、最後の八合目が踏ん張りどころだ」
+            </blockquote>
+            <p>これが「粘り」というものの独特の特色。何かを成し遂げるには少なくとも30年の長期戦を覚悟せよ。</p>
+          </div>
+        </details>
+
+        <!-- 第11講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第11講「長所と短所」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第12講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第12講「偉人のいろいろ」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第13講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第13講「伝記を読む時期」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第14講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第14講「人生の深さ」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第15講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第15講「一時一事」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第16講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第16講「良寛戒語」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第17講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第17講「質問」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第18講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第18講「忍耐」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第19講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第19講「自修の人」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第20講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第20講「老木の美」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第21講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第21講「故人に尽くす一つの途」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第22講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第22講「下坐行」★注目</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第23講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第23講「卒業後の指導」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第24講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第24講「出処進退」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第25講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第25講「最善観」★注目</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第26講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第26講「二種の苦労人」★注目</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第27講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第27講「世の中は正直」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第28講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第28講「平常心是道」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第29講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第29講「人生は妙味津々」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第30講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第30講「試験について」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第31講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第31講「真面目」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第32講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第32講「教育と礼」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第33講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第33講「敬について」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第34講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第34講「ねばり」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第35講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第35講「批評的態度というもの」★注目</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第36講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第36講「一日の意味」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第37講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第37講「ペスタロッチ」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第38講（内容未記載） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第38講「置土産」</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+        <!-- 第39講（内容未記載・最終講） -->
+        <div class="bg-gray-100 border border-gray-300 border-dashed rounded-lg p-4 text-gray-500">
+          <span class="font-medium">第39講「わかれの言葉」（最終講）★注目</span>
+          <span class="text-xs ml-2">（内容準備中）</span>
+        </div>
+
+      </div>
+    </section>
+
+  </article>
+</Layout>
